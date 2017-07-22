@@ -436,7 +436,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -486,6 +486,9 @@ local_search:
 exturl: false
 
 
+reward_comment: 有钱捧个钱场，没钱捧个人场
+wechatpay: /images/wechatPay.png
+alipay: /images/alipay.png
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
