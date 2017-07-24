@@ -199,7 +199,7 @@ post_wordcount:
 
 # Wechat Subscriber
 wechat_subscriber:
-  enabled: true
+  enabled: false
   qcode: /images/wechat-qcode.jpg
   description: Join me !
 

@@ -4,7 +4,7 @@ date: 2017-07-21 13:51:34
 categories: 技术 #文章分类
 tags: [搭建,博客,hexo] #文章标签
 description: 跟风随大流的搭建博客
-comments: true
+comments: false
 ---
 
 - 首先声明，本教程所针对的是windows用户。

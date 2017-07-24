@@ -188,9 +188,11 @@
           {% endif %}
 
           {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
+            
+            <span class="page-pv">
+            &nbsp; | &nbsp; 热度&nbsp; 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>°C
+            {{ theme.busuanzi_count.page_pv_footer }}
             </span>
           {% endif %}
 
