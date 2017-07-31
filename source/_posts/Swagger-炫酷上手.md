@@ -1,7 +1,7 @@
 ---
 title: Swagger 炫酷上手
 date: 2017-07-24 15:52:10
-categories: 技术 #文章分类
+categories: Swagger #文章分类
 tags: [Swagger] #文章标签
 description: 最（hen）流（niu）行（bi）的API表达工具
 ---

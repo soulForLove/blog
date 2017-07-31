@@ -1,7 +1,7 @@
 ---
 title: 使用MyBatis Generator自动创建代码
 date: 2017-07-24 20:40:41
-categories: 技术 #文章分类
+categories: MyBatis #文章分类
 tags: [mybatis] #文章标签
 description: 跟风小技能
 comments: false
