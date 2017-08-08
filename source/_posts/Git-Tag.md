@@ -62,5 +62,3 @@ git tag -v v1.0
 （在idea直接执行提交设置的tag）
 git push origin --tags  
 
-<br/>
-<center>**转载请注明出处，谢谢！**</center>

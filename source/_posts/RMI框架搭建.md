@@ -5,6 +5,8 @@ categories: RMI #文章分类
 tags: [搭建,RMI] #文章标签
 description: RMI远程调用
 comments: false
+<!-- top: 10 -->
+copyright: true
 ---
 <!-- more -->
 ## 创建子模块
@@ -106,5 +108,3 @@ public Map<String, Object> getIdleList(@Valid IdleResModel idleResModel) {
 }
 ```
 
-<br/>
-<center>**转载请注明出处，谢谢！**</center>

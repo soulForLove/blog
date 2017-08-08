@@ -501,7 +501,7 @@ use_motion: true
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -518,7 +518,7 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-bounce
 
 # Canvas-nest
 canvas_nest: true
@@ -617,7 +617,13 @@ vendors:
   # Internal version: 3.3.0
   # https://github.com/ethantw/Han
   han:
-
+# 结束符
+passage_end_tag:
+  enabled: true
+#添加宠物
+# live2d:
+#   model: koharu
+#   bottom: -30
 
 # Assets
 css: css

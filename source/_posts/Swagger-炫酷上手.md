@@ -4,6 +4,8 @@ date: 2017-07-24 15:52:10
 categories: Swagger #文章分类
 tags: [Swagger] #文章标签
 description: 最（hen）流（niu）行（bi）的API表达工具
+copyright: true
+<!-- top: 20 -->
 ---
 
 
@@ -136,5 +138,3 @@ parameters: # 自定义参数模型
 **[详细解释传送门](https://www.gitbook.com/book/huangwenchao/swagger/details)**
 </center>
 
-<br/>
-<center>**转载请注明出处，谢谢！**</center>
