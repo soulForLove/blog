@@ -8,7 +8,9 @@ copyright: true
 ---
 <!-- more -->
 ## 基本功能点
+<center>
 ![shiro-1](http://otkzd4sua.bkt.clouddn.com/blog-shiro-1.png)
+</center>
 * Authentication：身份认证/登录，验证用户是不是拥有相应的身份；
 * Authorization：授权，即权限验证，验证某个已认证的用户是否拥有某个权限；即判断用户是否能做事情，常见的如：验证某个用户是否拥有某个角色。或者细粒度的验证某个用户对某个资源是否具有某个权限；
 * Session Manager：会话管理，即用户登录后就是一次会话，在没有退出之前，它的所有信息都在会话中；会话可以是普通JavaSE环境的，也可以是如Web环境的；
@@ -25,7 +27,9 @@ copyright: true
 接下来我们分别从外部和内部来看看Shiro的架构，对于一个好的框架，从外部来看应该具有非常简单易于使用的API，且API契约明确；从内部来看的话，其应该有一个可扩展的架构，即非常容易插入用户自定义实现，因为任何框架都不能满足所有需求。
 ## 外部视角
  首先，我们从外部来看Shiro吧，即从应用程序角度的来观察如何使用Shiro完成工作。如下图：
+<center>
 ![shiro-2](http://otkzd4sua.bkt.clouddn.com/blog-shiro-2.png)
+</center>
 可以看到：应用代码直接交互的对象是Subject，也就是说Shiro的对外API核心就是Subject；其每个API的含义：
 * Subject：主体，代表了当前“用户”，这个用户不一定是一个具体的人，与当前应用交互的任何东西都是Subject，如网络爬虫，机器人等；即一个抽象概念；所有Subject都绑定到SecurityManager，与Subject的所有交互都会委托给SecurityManager；可以把Subject认为是一个门面；SecurityManager才是实际的执行者；
 * SecurityManager：安全管理器；即所有与安全有关的操作都会与SecurityManager交互；且它管理着所有Subject；可以看出它是Shiro的核心，它负责与后边介绍的其他组件进行交互，如果学习过SpringMVC，你可以把它看成DispatcherServlet前端控制器；
@@ -38,7 +42,9 @@ copyright: true
 从以上也可以看出，Shiro不提供维护用户/权限，而是通过Realm让开发人员自己注入。
 ## 内部视角
 接下来我们来从Shiro内部来看下Shiro的架构，如下图所示：
+<center>
 ![shiro-3](http://otkzd4sua.bkt.clouddn.com/blog-shiro-3.png)
+</center>s
 * Subject：主体，可以看到主体可以是任何可以与应用交互的“用户”；
 * SecurityManager：相当于SpringMVC中的DispatcherServlet或者Struts2中的FilterDispatcher；是Shiro的心脏；所有具体的交互都通过SecurityManager进行控制；它管理着所有Subject、且负责进行认证和授权、及会话、缓存的管理。
 * Authenticator：认证器，负责主体认证的，这是一个扩展点，如果用户觉得Shiro默认的不好，可以自定义实现；其需要认证策略（Authentication Strategy），即什么情况下算用户认证通过了；
