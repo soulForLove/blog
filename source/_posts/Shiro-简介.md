@@ -5,6 +5,7 @@ categories: [Shiro]
 tags: [Shiro,安全]
 description: Shiro 各个点含义
 copyright: true
+comments: true
 ---
 <!-- more -->
 ## 基本功能点

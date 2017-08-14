@@ -4,7 +4,7 @@ date: 2017-07-24 20:40:41
 categories: MyBatis #文章分类
 tags: [mybatis] #文章标签
 description: 跟风小技能
-comments: false
+comments: true
 ---
 > 由于MyBatis属于一种半自动的ORM框架，所以主要的工作就是配置Mapping映射文件，但是由于手写映射文件很容易出错，所以可利用MyBatis生成器自动生成实体类、DAO接口和Mapping映射文件。这样可以省去很多的功夫，将生成的代码copy到项目工程中即可
 

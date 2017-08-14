@@ -4,7 +4,7 @@ date: 2017-07-31 14:44:04
 categories: SpringMVC #文章分类
 tags: [SpringMVC,配置] #文章标签
 description: 配置问题
-comments: false
+comments: true
 ---
 <!-- more -->
 当没有在配置文件中配置``<mvc:annotation-driven/>``,程序执行没有出现问题，但是postman会报如下图的问题：

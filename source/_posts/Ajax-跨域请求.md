@@ -5,6 +5,7 @@ categories: [Ajax]
 tags: [ajax,跨域]
 description: Access-Control-Allow-Origin
 copyright: true
+comments: true
 ---
 <!-- more -->
 ## 错误信息

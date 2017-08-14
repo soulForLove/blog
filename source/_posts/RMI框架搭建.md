@@ -4,7 +4,7 @@ date: 2017-08-08 15:00:48
 categories: RMI #文章分类
 tags: [搭建,RMI] #文章标签
 description: RMI远程调用
-comments: false
+comments: true
 <!-- top: 10 -->
 copyright: true
 ---
