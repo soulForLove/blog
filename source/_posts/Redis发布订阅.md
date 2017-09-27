@@ -37,10 +37,10 @@ comments: true
     <bean id="redisMessageListener" class="com.gengee.gsm.util.RedisMessageListener"/>
 
     <redis:listener-container connection-factory="jedisConnectionFactory">
-        <redis:listener ref="redisMessageListener" topic="schedule:pdfUrl" />
+        <redis:listener ref="redisMessageListener" topic="redisChannel" />
     </redis:listener-container>
 ```
-* RedisMessageListener
+* RedisMessageListener 消息监听
 ```
 public class RedisMessageListener implements MessageListener {
 
@@ -55,6 +55,12 @@ public class RedisMessageListener implements MessageListener {
         }
     }
 }
+```
+* redis发布
+```
+Jedis jedis = new Jedis("127.0.0.1", 6379);
+jedis.auth("redisPassword");
+jedis.publish("redisChannel", "publishMessage");
 ```
 >参考文档：http://www.cnblogs.com/yitudake/p/6747995.html
 > http://blog.csdn.net/valenon/article/details/46414455
