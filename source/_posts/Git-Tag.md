@@ -2,9 +2,10 @@
 title: Git Tag
 date: 2017-08-03 21:10:40
 categories: Git #文章分类
-tags: [Tag,Git] #文章标签
+tags: [Git] #文章标签
 description: tag 相关操作
 comments: true
+copyright: true
 ---
 
 <!-- more -->

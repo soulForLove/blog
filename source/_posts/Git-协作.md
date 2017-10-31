@@ -2,7 +2,7 @@
 title: Git 协作
 date: 2017-08-17 16:22:02
 categories: [Git]
-tags: [Git,git-Team]
+tags: [Git]
 description: GitHub团队项目流程操作
 copyright: true
 comments: true
