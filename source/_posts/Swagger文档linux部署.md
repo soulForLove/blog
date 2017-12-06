@@ -20,7 +20,11 @@ comments: true
 </VirtualHost>
 
 ```
+
+* 修改后需要重启httpd服务：/etc/init.d/httpd restart
+
 ## 放置文档文件夹
+
 * /swagger
 ## 由于SELinux开启造成的Apache 2 Test Page powered by CentOS
 * 把SELinux的状态改一下就可以：执行setenforce 0
