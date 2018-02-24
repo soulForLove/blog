@@ -10,7 +10,7 @@ comments: true
 <!-- more -->
 ## linux 执行jar
 
-* nohup java -jar -XX:InitialHeapSize=32m -XX:MaxHeapSize=128m -XX:+HeapDumpOnOutOfMemoryError background-1.0.0-SNAPSHOT.jar >> background.log 2>&1 &
+* nohup java -jar dlz-0.0.1-SNAPSHOT.jar --server.port=8899  >> background.log 2>&1  &
 
 ## linux命令
 

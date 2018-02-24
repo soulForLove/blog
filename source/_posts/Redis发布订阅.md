@@ -1,8 +1,8 @@
 ---
 title: Redis发布订阅
 date: 2017-09-19 09:20:21
-categories: [Redis]
-tags: [Redis]
+categories: [redis]
+tags: [redis]
 description: Redis 发布订阅(pub/sub)是一种消息通信模式：发送者(pub)发送消息，订阅者(sub)接收消息。
 copyright: true
 comments: true

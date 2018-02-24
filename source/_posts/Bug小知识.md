@@ -1,7 +1,7 @@
 ---
 title: Bug小知识
 date: 2017-09-28 19:56:40
-categories: [Bug,小知识]
+categories: [Bug]
 tags: [Bug,小知识]
 description: 踩坑之旅
 copyright: true

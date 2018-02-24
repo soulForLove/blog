@@ -1,8 +1,8 @@
 ---
 title: Redis小知识
 date: 2017-12-05 09:11:35
-categories: [Redis]
-tags: [Redis,小知识]
+categories: [redis]
+tags: [redis,小知识]
 description: Redis 相关知识点
 copyright: true
 comments: true

@@ -1,8 +1,8 @@
 ---
 title: Redis的5个常见使用场景
 date: 2017-09-20 16:44:45
-categories: [Redis]
-tags: [Redis]
+categories: [redis]
+tags: [redis]
 description: 会话缓存/全页缓存/队列/排行榜/发布订阅
 copyright: true
 comments: true
