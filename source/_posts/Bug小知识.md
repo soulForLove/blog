@@ -6,6 +6,7 @@ tags: [Bug,小知识]
 description: 踩坑之旅
 copyright: true
 comments: true
+password: password
 ---
 <!-- more -->
 1. 数据库字段类型与模型类型要一一对应

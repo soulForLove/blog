@@ -51,3 +51,10 @@ tommy   ALL=(ALL)     ALL
 修改完毕，现在可以用tommy帐号登录，然后用命令 su - ，即可获得root权限进行操作。
 
 ```
+
+## 通常查找出错误日志 cat error.log | grep '错误error' , 这时候我们还有个需求就是输出当前这个日志的前后几行：
+```
+cat error.log | grep -C 5 '错误error' 显示error.log文件里匹配"错误error"字符串那行以及上下5行
+cat error.log | grep -B 5 '错误error' 显示"错误error"及前5行
+cat error.log | grep -A 5 '错误error' 显示"错误error"及后5行
+```

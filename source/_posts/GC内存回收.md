@@ -4,7 +4,7 @@ date: 2018-02-24 10:27:09
 updated: 2018-02-24 10:27:09
 categories: [GC]
 tags: [GC,小知识]
-description: 在Java中，它的内存管理包括两方面：内存分配（创建Java对象的时候）和内存回收，正因为内存管理完全由JVM负责，所以也使Java很多程序员不再关心内存分配，导致很多程序低效，耗内存......
+description: 在Java中，它的内存管理包括两方面：内存分配（创建Java对象的时候）和内存回收，正因为内存管理完全由JVM负责，所以也使Java很多人不再关心内存分配，导致很多程序低效，耗内存......
 copyright: true
 comments: true
 ---

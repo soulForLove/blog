@@ -92,3 +92,16 @@ private       √       ×             ×           ×
 
 1. 首先将服务器对应的ip端口开放，直接用postman调用接口，发现耗时一样很长，排除服务器nginx代理以及路由导致的原因
 2. 发现服务器带宽只有2M，下载理论峰值256k左右，上传只有128左右，1024/128=8s ，原因就是因为服务器带宽不足，导致上传时间消耗比较多
+
+## Switch能否用string做参数
+
+1. 在jdk 7 之前，switch 只能支持 byte、short、char、int 这几个基本数据类型和其对应的封装类型
+2. jdk1.7后，整形，枚举类型，boolean，字符串都可以
+> 其实jdk1.7并没有新的指令来处理switch string，而是通过调用switch中string.hashCode,将string转换为int从而进行判断
+
+## 全局异常处理
+
+> 使用 @ControllerAdvice + @ExceptionHandler 进行全局的 Controller 层异常处理，只要设计得当，就再也不用在 Controller 层进行 try-catch 了！而且，@Validated 校验器注解的异常，也可以一起处理，无需手动判断绑定校验结果 BindingResult/Errors
+
+1. 优点：将 Controller 层的异常和数据校验的异常进行统一处理，减少模板代码，减少编码量，提升扩展性和可维护性。
+2. 缺点：只能处理 Controller 层未捕获（往外抛）的异常，对于 Interceptor（拦截器）层的异常，Spring 框架层的异常，就无能为力了。
