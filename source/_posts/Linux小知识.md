@@ -58,3 +58,15 @@ cat error.log | grep -C 5 '错误error' 显示error.log文件里匹配"错误err
 cat error.log | grep -B 5 '错误error' 显示"错误error"及前5行
 cat error.log | grep -A 5 '错误error' 显示"错误error"及后5行
 ```
+
+## 批量删除某字符串开头的文件
+```
+删除“tomcat-开头的文件”
+find . -name "tomcat-*" | xargs rm -rf
+```
+
+## 查看文件最后N行的命令
+```
+tail -n 20 filename
+说明：显示filename最后20行
+```

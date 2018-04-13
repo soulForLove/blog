@@ -105,3 +105,15 @@ private       √       ×             ×           ×
 
 1. 优点：将 Controller 层的异常和数据校验的异常进行统一处理，减少模板代码，减少编码量，提升扩展性和可维护性。
 2. 缺点：只能处理 Controller 层未捕获（往外抛）的异常，对于 Interceptor（拦截器）层的异常，Spring 框架层的异常，就无能为力了。
+
+## Integer 装箱 拆箱 比较
+
+1. Integer与int类型的赋值
+
+    把Integer类型的赋值给int类型，调用intValue()方法进行拆箱赋值。
+
+    把int类型赋值给Integer，会调用valueOf()方法对int进行装箱赋值。
+
+2. Integer与int类型的比较
+
+    先对Integer调用intValue()进行拆箱，然后进行值比较
