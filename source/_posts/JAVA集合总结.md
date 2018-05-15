@@ -78,6 +78,12 @@ TreeMap实现SortMap接口，能够把它保存的记录根据键排序，默认
 ### LinkedHashMap
 LinkedHashMap保存了记录的插入顺序，在用Iteraor遍历LinkedHashMap时，先得到的记录肯定是先插入的，在遍历的时候会比HashMap慢，有HashMap的全部特性。
 
+### ConcurrentHashMap 线程安全
+
+* JDK1.7分析：ConcurrentHashMap采用 分段锁的机制，实现并发的更新操作，底层采用数组+链表的存储结构
+* JDK1.8分析：1.8的实现已经抛弃了Segment分段锁机制，利用CAS+Synchronized来保证并发更新的安全，底层采用数组+链表+红黑树的存储结构
+* CAS的思想：三个参数，一个当前内存值V、旧的预期值A、即将更新的值B，当且仅当预期值A和内存值V相同时，将内存值修改为B并返回true，否则什么都不做，并返回false。
+
 
 ## 主要实现类区别
 
