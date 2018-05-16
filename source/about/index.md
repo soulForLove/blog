@@ -5,4 +5,3 @@ comments: false
 ---
 
 ![](http://otkzd4sua.bkt.clouddn.com/wechat.jpg)
-![](http://otkzd4sua.bkt.clouddn.com/resume.png)
